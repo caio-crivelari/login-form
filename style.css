@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.link {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  text-decoration-color: #475569;
+}
+
+#page {
+  min-height: 100vh;
+}
+
+#page > * {
+  width: 50%;
+}
+
+.side-background {
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.logo-img {
+  padding: 4rem 8.2rem 0;
+}
+
+main {
+  padding: 0 8.2rem;
+}
+
+.headline {
+  margin-top: 4rem;
+  max-width: 35rem;
+}
+
+.headline h1 {
+  font-size: 3.6rem;
+  color: #1e293b;
+}
+
+.headline p {
+  margin-top: 1.6rem;
+  margin-bottom: 2rem;
+  color: #475569;
+}
+
+.input-wrapper {
+  flex-direction: column;
+  margin-block: 1.6rem;
+}
+
+.input-wrapper label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin-block: 0.8rem;
+}
+
+.input-wrapper input {
+  all: unset;
+  padding: 1.6rem 1.2rem;
+  background: #ffffff;
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 0.4rem;
+}
+
+.input-wrapper input:focus {
+  outline: 0.1rem solid #7c3aed;
+  border-radius: 0.4rem;
+}
+
+.input-wrapper input::placeholder {
+  font-size: 1.4rem;
+  color: #94a3b8;
+}
+
+.label-wrapper {
+  align-items: center;
+  justify-content: space-between;
+}
+
+button {
+  border: none;
+  padding: 1.6rem 2.4rem;
+  width: 100%;
+  height: 5.6rem;
+  background: #7c3aed;
+  border-radius: 0.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-block: 2.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #9f67ff;
+}
+
+.subscribe {
+  color: #475569;
+}
+
+.subscribe a {
+  font-weight: 700;
+  font-size: initial;
+}
+
+@media (max-width: 970px) {
+  .side-background {
+    display: none;
+  }
+  #page > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    padding: 4rem;
+  }
+}
